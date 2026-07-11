@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jamaal Randall | AI Growth Strategist</title>
-  <meta name="description" content="Jamaal Randall builds AI-powered growth systems for culture, campaigns, revenue, entertainment marketing, automation, and audience development.">
+  <title>Jamaal Randall | AI Growth &amp; Marketing Strategist</title>
+  <meta name="description" content="Jamaal Randall is an AI growth and marketing strategist with 10+ years across entertainment marketing, audience development, automation, and measurable campaign growth.">
   <meta name="author" content="Jamaal Randall">
   <link rel="canonical" href="https://jamaalrandall.com/">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jamaalrandall.com/">
-  <meta property="og:title" content="Jamaal Randall | AI Growth Strategist">
-  <meta property="og:description" content="AI strategy, growth marketing, automation, and audience systems for culture, campaigns, and revenue.">
+  <meta property="og:title" content="Jamaal Randall | AI Growth &amp; Marketing Strategist">
+  <meta property="og:description" content="10+ years connecting entertainment marketing, audience growth, creative strategy, and AI automation.">
   <meta property="og:image" content="https://jamaalrandall.com/assets/social-preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Jamaal Randall | AI Growth Strategist">
-  <meta name="twitter:description" content="AI strategy, growth marketing, automation, and audience systems for culture, campaigns, and revenue.">
+  <meta name="twitter:title" content="Jamaal Randall | AI Growth &amp; Marketing Strategist">
+  <meta name="twitter:description" content="10+ years connecting entertainment marketing, audience growth, creative strategy, and AI automation.">
   <meta name="twitter:image" content="https://jamaalrandall.com/assets/social-preview.jpg">
   <script type="application/ld+json">
     {
@@ -25,7 +25,7 @@
       "name": "Jamaal Randall",
       "url": "https://jamaalrandall.com/",
       "image": "https://jamaalrandall.com/assets/jamaal-portrait-smiling.png",
-      "jobTitle": "AI Growth Strategist",
+      "jobTitle": "AI Growth and Marketing Strategist",
       "email": "mailto:leealday@gmail.com",
       "knowsAbout": [
         "AI strategy",
@@ -227,6 +227,11 @@
     button, input, textarea, select { font: inherit; }
     img { display: block; max-width: 100%; }
 
+    :focus-visible {
+      outline: 3px solid var(--teal);
+      outline-offset: 4px;
+    }
+
     .site-header {
       position: fixed;
       inset: 0 0 auto;
@@ -282,6 +287,14 @@
     nav a:hover {
       opacity: 1;
       color: var(--nav-hover);
+    }
+
+    nav .nav-cta {
+      padding: 9px 13px;
+      border: 1px solid var(--button-secondary-border);
+      border-radius: 6px;
+      background: var(--button-secondary-bg);
+      opacity: 1;
     }
 
     .hero {
@@ -342,6 +355,47 @@
       margin-bottom: 32px;
       color: var(--hero-copy);
       font-size: clamp(17px, 1.42vw, 21px);
+    }
+
+    .role-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 24px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .role-list li {
+      padding: 7px 10px;
+      border: 1px solid var(--button-secondary-border);
+      border-radius: 999px;
+      color: var(--hero-copy);
+      background: var(--button-secondary-bg);
+      font-family: var(--font-ui);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .availability {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 28px;
+      color: var(--hero-copy);
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .availability::before {
+      content: "";
+      flex: 0 0 auto;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 0 5px rgba(34, 197, 94, .14);
     }
 
     .hero-actions {
@@ -784,6 +838,22 @@
       text-transform: uppercase;
     }
 
+    .case-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      color: var(--summary-ink);
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .case-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
     .tag-list {
       display: flex;
       flex-wrap: wrap;
@@ -917,6 +987,18 @@
     .role p {
       margin-bottom: 0;
       color: var(--muted);
+    }
+
+    .role-highlights {
+      display: grid;
+      gap: 8px;
+      margin: 14px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .role-highlights li::marker {
+      color: var(--teal);
     }
 
     .career-band {
@@ -1128,6 +1210,12 @@
         font-size: 15px;
       }
 
+      nav .nav-cta {
+        padding: 0;
+        border: 0;
+        background: transparent;
+      }
+
       .hero {
         min-height: auto;
         background: var(--mobile-hero-bg);
@@ -1187,6 +1275,11 @@
         flex-direction: column;
       }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
   </style>
 </head>
 <body>
@@ -1201,12 +1294,11 @@
       <span>Jamaal Randall</span>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="#offers">Offers</a>
       <a href="#work">Work</a>
-      <a href="#systems">Systems</a>
+      <a href="#experience">Experience</a>
+      <a href="#offers">Capabilities</a>
       <a href="https://github.com/leelaamaj" target="_blank" rel="noreferrer" data-track="GitHub">GitHub</a>
-      <a href="assets/jamaal-randall-resume-2026.pdf" target="_blank" rel="noreferrer" data-track="Download Resume">Resume</a>
-      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="assets/jamaal-randall-resume-2026.pdf" target="_blank" rel="noreferrer" data-track="Download Resume">Resume</a>
     </nav>
   </header>
 
@@ -1215,13 +1307,20 @@
       <div class="hero-inner">
         <div class="hero-grid">
           <div>
-            <p class="eyebrow">AI Growth Strategist</p>
-            <h1 id="hero-title">I build AI-powered growth systems for artists, brands, and revenue teams.</h1>
-            <p class="hero-copy">I connect creative strategy, automation, audience intelligence, and campaign execution so teams can find opportunities faster, move cleaner, and measure what actually grows.</p>
+            <p class="eyebrow">Jamaal Randall · AI Growth Strategist</p>
+            <h1 id="hero-title">I turn creative ideas into measurable growth systems.</h1>
+            <p class="hero-copy">I bring 10+ years across entertainment marketing, audience development, creative direction, and AI automation—connecting strategy to systems that teams can actually ship and improve.</p>
+            <ul class="role-list" aria-label="Target roles and specialties">
+              <li>AI Growth Strategy</li>
+              <li>Growth Marketing</li>
+              <li>Marketing Automation</li>
+              <li>Entertainment Marketing</li>
+            </ul>
+            <p class="availability">Los Angeles, CA · Resume and work samples ready</p>
             <div class="hero-actions">
-              <a class="button primary" href="#work" data-track="Explore Work">Explore Work <span aria-hidden="true">→</span></a>
+              <a class="button primary" href="#work" data-track="Explore Work">View Case Studies <span aria-hidden="true">→</span></a>
               <a class="button secondary" href="assets/jamaal-randall-resume-2026.pdf" target="_blank" rel="noreferrer" data-track="Download Resume">Download Resume</a>
-              <a class="button secondary" href="mailto:leealday@gmail.com?subject=Portfolio%20Inquiry%20for%20Jamaal%20Randall&body=Hi%20Jamaal%2C%0A%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20connect%20about%20" data-track="Start Conversation">Start a Conversation</a>
+              <a class="button secondary" href="https://linkedin.com/in/jamaal-randall-57142494" target="_blank" rel="noreferrer" data-track="LinkedIn">LinkedIn</a>
             </div>
           </div>
           <div class="hero-side">
@@ -1235,20 +1334,20 @@
                 <strong>Los Angeles, CA</strong>
               </div>
               <div class="snapshot-row">
-                <span>Focus</span>
-                <strong>AI strategy, growth marketing, automation, content systems</strong>
+                <span>Experience</span>
+                <strong>10+ years across music, brand, audience, and digital growth</strong>
               </div>
               <div class="snapshot-row">
                 <span>Best Fit</span>
                 <strong>AI Growth Strategist, Growth Marketing, Digital Strategy, Automation</strong>
               </div>
               <div class="snapshot-row">
-                <span>Resume</span>
-                <strong><a href="assets/jamaal-randall-resume-2026.pdf" target="_blank" rel="noreferrer">Download PDF</a></strong>
+                <span>Proof</span>
+                <strong>75M+ streams · 18% engagement lift · 200% reach growth</strong>
               </div>
               <div class="snapshot-row">
-                <span>Links</span>
-                <strong><a href="mailto:leealday@gmail.com?subject=Portfolio%20Inquiry%20for%20Jamaal%20Randall">Email</a> · <a href="https://linkedin.com/in/jamaal-randall-57142494" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="https://github.com/leelaamaj" target="_blank" rel="noreferrer">GitHub</a> · <a href="https://jamaalrandall.univer.se/" target="_blank" rel="noreferrer">Universe</a> · <a href="https://leelaamaj.com" target="_blank" rel="noreferrer">leelaamaj.com</a></strong>
+                <span>Recruiter Kit</span>
+                <strong><a href="assets/jamaal-randall-resume-2026.pdf" target="_blank" rel="noreferrer">Resume</a> · <a href="https://linkedin.com/in/jamaal-randall-57142494" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="https://github.com/leelaamaj" target="_blank" rel="noreferrer">GitHub</a> · <a href="mailto:leealday@gmail.com?subject=Portfolio%20Inquiry%20for%20Jamaal%20Randall">Email</a></strong>
               </div>
             </aside>
           </div>
@@ -1278,33 +1377,33 @@
     <section class="section" id="offers">
       <div class="section-inner">
         <div class="section-heading">
-          <h2>What I Sell</h2>
-          <p>Clear, useful offers for teams that need creative judgment, AI leverage, and measurable growth without adding operational drag.</p>
+          <h2>What I Bring</h2>
+          <p>Four capabilities that help teams connect creative ambition, audience insight, AI leverage, and measurable execution.</p>
         </div>
         <div class="offer-grid">
           <article class="offer-card">
             <b>01</b>
             <h3>AI Growth Strategy</h3>
             <p>Opportunity mapping, campaign experiments, audience segmentation, prompt systems, and decision logic for teams that need sharper growth direction.</p>
-            <strong>Best for: growth, music, brand, and creator teams</strong>
+            <strong>Value: sharper bets, faster learning, stronger signal</strong>
           </article>
           <article class="offer-card">
             <b>02</b>
             <h3>Campaign Systems</h3>
             <p>Social, artist, and brand campaign structures that turn creative ideas into launch plans, channel strategy, content direction, and performance loops.</p>
-            <strong>Best for: releases, launches, and audience pushes</strong>
+            <strong>Value: clearer launches and measurable performance loops</strong>
           </article>
           <article class="offer-card">
             <b>03</b>
             <h3>Automation Builds</h3>
             <p>Lightweight workflows for lead capture, CRM follow-up, reporting, intake, research, scoring, and repeatable operating systems.</p>
-            <strong>Best for: founders, operators, and lean teams</strong>
+            <strong>Value: less manual work and cleaner team handoffs</strong>
           </article>
           <article class="offer-card">
             <b>04</b>
             <h3>Revenue Operations</h3>
             <p>Dashboards, process cleanup, funnel visibility, tool stacks, and AI-assisted systems that help teams understand what is working and what to do next.</p>
-            <strong>Best for: teams turning activity into revenue</strong>
+            <strong>Value: stronger visibility from activity to outcome</strong>
           </article>
         </div>
       </div>
@@ -1314,7 +1413,7 @@
       <div class="section-inner">
         <div class="principles">
           <div class="principle-lead">
-            <p class="eyebrow">Point of View</p>
+            <p class="eyebrow">How I Think</p>
             <h3>Creative enough to move culture. Structured enough to measure it.</h3>
             <p>My work sits where music marketing, audience behavior, automation, and data-driven experimentation meet.</p>
           </div>
@@ -1322,29 +1421,29 @@
             <article class="principle">
               <b>01</b>
               <div>
-                <h3>Make the value obvious fast</h3>
-                <p>Recruiters and clients should understand the role, proof, and fit in the first screen.</p>
+                <h3>Start with the audience signal</h3>
+                <p>Use behavior, culture, platform data, and business context to find the strongest opportunity.</p>
               </div>
             </article>
             <article class="principle">
               <b>02</b>
               <div>
-                <h3>Show outcomes before adjectives</h3>
-                <p>Streams, engagement, reach, impressions, cost reduction, and systems built carry the story.</p>
+                <h3>Turn insight into a clear bet</h3>
+                <p>Shape the signal into a campaign, message, workflow, or experiment with a measurable goal.</p>
               </div>
             </article>
             <article class="principle">
               <b>03</b>
               <div>
-                <h3>Keep the craft visible</h3>
-                <p>Strong typography, clean pacing, real imagery, and case context show creative judgment.</p>
+                <h3>Build the operating layer</h3>
+                <p>Create the prompts, automation, dashboards, and team rhythm that help good strategy travel.</p>
               </div>
             </article>
             <article class="principle">
               <b>04</b>
               <div>
-                <h3>Connect strategy to execution</h3>
-                <p>The through-line is not just ideas. It is campaigns, workflows, analytics, and systems that ship.</p>
+                <h3>Measure, learn, and sharpen</h3>
+                <p>Track performance and signal quality, then use what works to improve the next decision.</p>
               </div>
             </article>
           </div>
@@ -1361,7 +1460,7 @@
         <div class="case-grid">
           <article class="case featured">
             <div class="case-media">
-              <img alt="Venice Music campaign visual" src="https://onuniverse-assets.imgix.net/27C089D0-CB26-42A3-BCDC-83F72BE1C6C2?w=1500&auto=compress,format&q=60&fit=crop">
+              <img alt="Venice Music campaign visual" src="https://onuniverse-assets.imgix.net/27C089D0-CB26-42A3-BCDC-83F72BE1C6C2?w=1500&amp;auto=compress,format&amp;q=60&amp;fit=crop">
             </div>
             <div class="case-body">
               <div class="case-kicker"><span>Senior Marketing Strategist</span><span>2021-Present</span></div>
@@ -1438,7 +1537,7 @@
 
           <article class="case">
             <div class="case-media">
-              <img alt="LAAMAJ Media brand image" src="https://onuniverse-assets.imgix.net/4905DB20-6C2D-4A63-8018-5A302D66558C?w=1200&auto=compress,format&q=60&fit=crop">
+              <img alt="LAAMAJ Media brand image" src="https://onuniverse-assets.imgix.net/4905DB20-6C2D-4A63-8018-5A302D66558C?w=1200&amp;auto=compress,format&amp;q=60&amp;fit=crop">
             </div>
             <div class="case-body">
               <div class="case-kicker"><span>Founder + Creative Director</span><span>2014-2020</span></div>
@@ -1476,12 +1575,12 @@
 
           <article class="case">
             <div class="case-media">
-              <img alt="The Atom Factory campaign image" src="https://onuniverse-assets.imgix.net/43FF2CD1-EE65-4CF8-A610-3071997C534A?w=1200&auto=compress,format&q=60&fit=crop">
+              <img alt="The Atom Factory campaign image" src="https://onuniverse-assets.imgix.net/43FF2CD1-EE65-4CF8-A610-3071997C534A?w=1200&amp;auto=compress,format&amp;q=60&amp;fit=crop">
             </div>
             <div class="case-body">
               <div class="case-kicker"><span>Artist Development</span><span>2014-2020</span></div>
               <h3>The Atom Factory</h3>
-              <p>Supported campaigns for artists including Kamasi Washington and Nico & Vinz across A&R, marketing, and management teams.</p>
+              <p>Supported campaigns for artists including Kamasi Washington and Nico &amp; Vinz across A&amp;R, marketing, and management teams.</p>
               <div class="case-facts">
                 <div>
                   <span>Problem</span>
@@ -1493,7 +1592,7 @@
                 </div>
                 <div>
                   <span>Result</span>
-                  <strong>Stronger execution across A&R, marketing, and management.</strong>
+                  <strong>Stronger execution across A&amp;R, marketing, and management.</strong>
                 </div>
                 <div>
                   <span>Tools</span>
@@ -1548,8 +1647,8 @@
     <section class="section alt" aria-labelledby="proof-title">
       <div class="section-inner">
         <div class="section-heading">
-          <h2 id="proof-title">Proof Signals</h2>
-          <p>Fast credibility markers for recruiters and collaborators who need to understand the quality of the work quickly.</p>
+          <h2 id="proof-title">Why Teams Hire Me</h2>
+          <p>A rare mix of entertainment fluency, measurable growth work, hands-on AI building, and creative operating judgment.</p>
         </div>
         <div class="offer-grid">
           <article class="offer-card">
@@ -1645,21 +1744,33 @@
             <div class="role-time">2021-Present</div>
             <div>
               <h3>Senior Marketing Strategist · Venice Music</h3>
-              <p>Data-driven artist campaign strategy, analytics-led optimization, fan engagement growth, and cross-functional work across sync, brand, and marketing teams.</p>
+              <p>Data-driven artist campaign strategy and audience growth across music, brand, sync, and marketing teams.</p>
+              <ul class="role-highlights">
+                <li>Contributed campaign strategy supporting 75M+ streams for Aminé's TwoPointFive.</li>
+                <li>Drove an 18% fan engagement lift through analytics-led optimization across social platforms.</li>
+              </ul>
             </div>
           </article>
           <article class="role">
             <div class="role-time">2014-2020</div>
             <div>
               <h3>Founder + Creative Director · LAAMAJ Media</h3>
-              <p>Branding, social-first content, digital reach growth, and audience development for music and lifestyle clients.</p>
+              <p>Led brand strategy, social-first creative, and audience development for music and lifestyle clients.</p>
+              <ul class="role-highlights">
+                <li>Increased digital reach by 200% through integrated branding and marketing campaigns.</li>
+                <li>Built content systems generating 50K+ monthly organic impressions.</li>
+              </ul>
             </div>
           </article>
           <article class="role">
             <div class="role-time">2014-2020</div>
             <div>
               <h3>Artist Development Assistant · The Atom Factory</h3>
-              <p>Campaign support, content strategy, and coordination across A&R, marketing, and management teams.</p>
+              <p>Supported artist development and campaign execution across A&amp;R, marketing, and management.</p>
+              <ul class="role-highlights">
+                <li>Contributed research and campaign support for artists including Kamasi Washington and Nico &amp; Vinz.</li>
+                <li>Connected creative, audience, and operational context across cross-functional teams.</li>
+              </ul>
             </div>
           </article>
         </div>
@@ -1701,15 +1812,15 @@
         <div class="contact">
           <div class="contact-panel">
             <p class="eyebrow">Next Step</p>
-            <h2>Let’s build the next growth system.</h2>
-            <p>For roles, projects, AI growth strategy, entertainment marketing, brand growth, or business automation work, send a short note with the problem, goal, and what is already in place.</p>
+            <h2>Let’s talk about the role, team, or growth challenge.</h2>
+            <p>Recruiting for AI growth, marketing strategy, entertainment, automation, or creative operations? Send the role and what the team needs to accomplish next.</p>
             <div class="copy-box" id="pitchText" data-copy-text="I help brands and businesses turn creative strategy into scalable growth through AI-powered systems, experimentation, automation, and audience development.">I help brands and businesses turn creative strategy into scalable growth through AI-powered systems, experimentation, automation, and audience development.</div>
             <div class="contact-actions">
               <button class="button primary" type="button" onclick="copyPitch(event)">Copy Pitch</button>
               <a class="button secondary" href="assets/jamaal-randall-resume-2026.pdf" target="_blank" rel="noreferrer" data-track="Download Resume">Resume</a>
-              <a class="button secondary" href="mailto:leealday@gmail.com?subject=Portfolio%20Inquiry%20for%20Jamaal%20Randall&body=Hi%20Jamaal%2C%0A%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20connect%20about%20" data-track="Email Jamaal">Email Jamaal</a>
+              <a class="button secondary" href="mailto:leealday@gmail.com?subject=Portfolio%20Inquiry%20for%20Jamaal%20Randall&amp;body=Hi%20Jamaal%2C%0A%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20connect%20about%20" data-track="Email Jamaal">Email Jamaal</a>
               <a class="button secondary" href="https://linkedin.com/in/jamaal-randall-57142494" target="_blank" rel="noreferrer" data-track="LinkedIn">LinkedIn</a>
-              <a class="button secondary" href="https://github.com/leelaamaj" target="_blank" rel="noreferrer" data-track="GitHub">GitHub</a>
+              <a class="button secondary" href="https://github.com/leelaamaj/jamaal-randall-portfolio" target="_blank" rel="noreferrer" data-track="GitHub">Portfolio Code</a>
             </div>
           </div>
           <form class="contact-panel" name="portfolio-inquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="submitInquiry(event)">
@@ -1755,7 +1866,7 @@
     <div class="footer-links">
       <a href="mailto:leealday@gmail.com?subject=Portfolio%20Inquiry%20for%20Jamaal%20Randall">Email</a>
       <a href="https://linkedin.com/in/jamaal-randall-57142494" target="_blank" rel="noreferrer">LinkedIn</a>
-      <a href="https://github.com/leelaamaj" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://github.com/leelaamaj/jamaal-randall-portfolio" target="_blank" rel="noreferrer">Portfolio Code</a>
       <a href="assets/jamaal-randall-resume-2026.pdf" target="_blank" rel="noreferrer">Resume</a>
       <a href="/">Back to top</a>
     </div>
