@@ -1644,7 +1644,28 @@
     }
 
     .section.deep {
+      --deep-ink: #f8fbff;
+      --deep-copy: #c8dcf4;
+      --system-copy: #d8e8f8;
+      --chip-border: rgba(173, 216, 255, .32);
+      --chip-ink: #f1f8ff;
+      --workflow-border: rgba(173, 216, 255, .22);
+      --workflow-copy: #c8dcf4;
       background: linear-gradient(135deg, #041020 0%, #071a34 56%, #06101f 100%);
+      color: var(--deep-ink);
+    }
+
+    .section.deep h2,
+    .section.deep .workflow-step h3 {
+      color: #ffffff;
+    }
+
+    .section.deep .system-copy > p:not(.eyebrow) {
+      line-height: 1.72;
+    }
+
+    .section.deep .tool-cloud span {
+      background: rgba(255, 255, 255, .06);
     }
 
     .workflow {
@@ -1657,7 +1678,11 @@
       border: 0;
       border-bottom: 1px solid var(--workflow-border);
       border-radius: 0;
-      background: transparent;
+      background: rgba(255, 255, 255, .025);
+    }
+
+    .workflow-step:nth-child(even) {
+      background: rgba(110, 190, 255, .045);
     }
 
     .experience {
